@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+}
+
+.burgers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 6px 8px;
+    font-family: 'Libre Baskerville', serif;
+    background-color: beige;
+}
+
+.menuCardWrapper{
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background-color: gold;
+    border: #492c1a 2px solid;
+    margin: 7px;
+    margin-left: 30px;
+
+}
+
+.menuCard{
+    position: relative;
+    margin-top: 25px;
+    width: 80%;
+    box-shadow: #492c1a 5px 6px 6px;
+    height: 340px;
+    text-align: center;
+    background-color:wheat;
+}
+
+.menuCard:hover{
+    transform: scale(1.05);
+    transition: 200ms ease-in-out;
+}
+
+.menuCard:hover > .overlay {
+    display: block;
+}
+
+.menuCard img{
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    background-color: #492c1a;
+    border: none;
+    width: 70px;
+    height: 2px;
+}
+
+.veganMeals{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 6px 8px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    background-color: rgba(0, 0, 0, 0.268);
+}
+
+.addToCart{
+    position: relative;
+    margin-top: 160px;
+}
+
+.addToCart button{
+    width: 30%;
+    height: 40px;
+    background-color: #e6701c;
+    border:#492c1a 1px;
+    border-radius: 15px;
+}
+
+.addToCart button a{
+    text-decoration: none;
+    color: #492c1a;
+    font-family: 20px;
+}

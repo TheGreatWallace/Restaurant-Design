@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    background-color: #40220fca;
+}
+
+.logo{
+    width: 30%;
+    height: 90px;
+    background-color:  #40220fca;
+}
+
+.logo img{
+    width: 85%;
+    height: 90px;
+    object-fit: cover;
+}
+
+.links{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    background-color:  #40220fca;
+}
+
+.links ul{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.links a{
+    padding: 5px 7px; 
+    color: #f8f3f0;
+    background-color: #492c1a;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    text-decoration: none;
+}
+
+
+.links li{
+    background-color: #e6701c;;
+    padding: 9px 9px; 
+    border-radius: 20px;
+}
+
+.links li:hover{
+    background-color: whitesmoke;
+    padding: 9px 9px; 
+    border-radius: 20px;
+}
+
+.links li a:hover{
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 5px 7px; 
+    border-radius: 15px;
+    border: 1px solid whitesmoke;
+}
+
+main p{
+    color: #bf6f3d;
+    font-family: 'El Messiri', sans-serif;
+}
+
+main h2{
+    padding: 5px;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.cover{
+    width: 100%;
+    height: 420px;
+    background-color: whitesmoke;
+    margin: auto;
+} 
+
+.firstInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    object-fit: contain;
+}
+
+.leftImage{
+    width: 35%;
+}
+
+.leftImage img{
+   width: 100%;
+   object-fit: contain;
+}
+
+.rightImage{
+    width: 35%;
+}
+
+.rightImage img{
+   width: 100%;
+   object-fit: contain;
+}
+
+.text{
+    width: 30%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.secondInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    object-fit: contain;
+}
+
+.data{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    width: 35%;
+    padding: 12px;
+}
+
+.midImage{
+    width: 30%;
+    object-fit: contain;
+}
+
+.midImage img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.addressSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 370px;
+}
+
+.addressImage{
+    width: 50%;
+    height: 370px;
+}
+
+.addressInfo{
+    width: 50%;
+    height: 370px;
+}
+
+.address{
+    width: 100%;
+    height: 370px;
+    color: #dda872;
+    background-color: #492c1a;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+hr{
+    background-color: #e6701c;
+    height: 3px;
+    border: #e6701c;
+}
+
+.secondSection{
+    font-family: 'Playfair Display', serif;
+}
+
+.title h1{
+    color: #e6701c;
+    font-size: 90px;
+    text-align: center;
+    padding: 7px;
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 370px;
+}
+
+.contact{
+    width: 50%;
+    height: 370px;
+    color: #dda872;
+    background-color: #492c1a;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact button{
+    width: 125px;
+    height: 40px;
+    background-color: #e6701c;
+    border: none;
+    border-radius: 12px;
+}
+
+.contact button:hover{
+    width: 125px;
+    height: 40px;
+    background-color: #dda872;
+    border: none;
+    border-radius: 12px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #dda872;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold; 
+    font-size: 15px;
+}
+
+.contact a:hover{
+    text-decoration: none;
+    color:#e6701c;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold; 
+    font-size: 15px;
+}
+
+.contactImage{
+    width: 50%;
+    height: 370px;
+}

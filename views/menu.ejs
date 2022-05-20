@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Libre+Baskerville&family=Lobster&family=Playfair+Display:ital,wght@1,400;1,500&family=Poppins:wght@100;200;400;500;800;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <main>
+      <div class="mainMenuContainer">
+        <button><a href="/">Home</a></button>
+        <section class="burgers">
+            <% meals.forEach(function(meals) { %>
+          <div class="menuCardWrapper">
+            <div class="menuCard">
+              <div class="overlay">
+                <div class="addToCart">
+                  <button class='addToCartLink'>Add To Cart</button>
+                </div>
+              </div>
+              <img class="mealImage"
+                src="<%= meals.meal_image %>"
+                width="295px"
+                height="240px"
+                style="object-fit: cover"
+              />
+              <h3 class="itemName" title="item Name"><%= meals.meal_name %></h3>
+              <h4 class="category" title="Category">
+                <%= meals.category %>
+              </h4>
+              <hr />
+              <hr />
+              <h2 class="price" title="Price">
+                <%= meals.meal_price %>
+                <span class="currencyType" style="color: red">USD</span>
+              </h2>
+            </div>
+        </div>
+        <% }); %>
+        </section>
+      </div>
+    </main>
+    <script>
+      var addToCartButton = document.getElementsByClassName('addToCartLink');
+      for(var i = 0; i < addToCartButton.length; i++ ){
+        var button =addToCartButton[i]
+        button.addEventListener('click', addToCartClicked)
+      }
+
+      function addToCartClicked(event){
+        var button = event.target
+        var shopItem = button.parentElement.parentElement
+        var itemName = shopItem.getElementsByClassName('itemName')[0].innertext
+        var itemImage = shopItem.getElementsByClassName('mealImage')[0].src
+        var itemPrice = shopItem.getElementsByClassName('price')[0].innertext
+        console.log(itemName,itemImage,itemPrice)
+      }
+    </script>
+  </body>
+</html>
